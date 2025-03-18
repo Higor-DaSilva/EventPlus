@@ -13,6 +13,6 @@ namespace EventoPlus.Interfaces
 
         void Deletar(Guid id);
 
-        void BuscarUsuarioPorId(Guid id);
+        void BuscarPorId(Guid id);
     }
 }

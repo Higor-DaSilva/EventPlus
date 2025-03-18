@@ -1,18 +1,18 @@
 ﻿using EventoPlus.Context;
 using EventoPlus.Interfaces;
 using EventPlus.Domains;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.AspNetCore.Mvc;
 
 namespace EventoPlus.Repositories
 {
     public class TipoEventoRepository : ITipoEventoRepository
     {
         private readonly EventPlus_Context _context;
+
         public TipoEventoRepository(EventPlus_Context context)
         {
             _context = context;
         }
+
         public void Atualizar(Guid id, EventPlus.Domains.TipoEvento tipoEventos)
         {
             TipoEvento eventoBuscado = _context.TipoEvento.Find(id)!;
@@ -34,7 +34,7 @@ namespace EventoPlus.Repositories
                 {
                     return tipoEventoBuscado;
                 }
-                return null;
+                return null!;
             }
             catch (Exception)
             {

@@ -11,7 +11,7 @@ namespace EventoPlus.Interfaces
 
         void Deletar(Guid id);
 
-        void Atualizar(Guid id, TipoEvento tipoEventos);
+        void Atualizar(Guid id, TipoEvento tipoEventos); 
 
         TipoEvento BuscarPorId(Guid id);
 
