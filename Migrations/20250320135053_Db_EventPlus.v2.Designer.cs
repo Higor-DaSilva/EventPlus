@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EventoPlus.Migrations
 {
     [DbContext(typeof(EventPlus_Context))]
-    [Migration("20250320122544_Db_EventPlus.v2")]
+    [Migration("20250320135053_Db_EventPlus.v2")]
     partial class Db_EventPlusv2
     {
         /// <inheritdoc />

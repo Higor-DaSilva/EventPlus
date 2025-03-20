@@ -23,24 +23,52 @@ namespace EventoPlus.Repositories
             _context.SaveChanges();
         }
 
-        public void BuscarPorId(Guid id)
+        public TipoUsuario BuscarPorId(Guid id)
         {
-            throw new NotImplementedException();
+            try
+            {
+                TipoUsuario usuarioBuscado = _context.TipoUsuario.Find(id)!;
+
+                return usuarioBuscado;  
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
         public void Cadastrar(TipoUsuario tipoUsuario)
         {
-            throw new NotImplementedException();
+            _context.TipoUsuario.Add(tipoUsuario);
+            _context.SaveChanges();
         }
 
         public void Deletar(Guid id)
         {
-            throw new NotImplementedException();
+
+            try
+            {
+                TipoUsuario usuarioBuscado = _context.TipoUsuario.Find(id)!;
+
+                if (usuarioBuscado != null)
+                {
+                    _context.TipoUsuario.Remove(usuarioBuscado);
+                }
+
+                _context.SaveChanges();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
         public List<TipoUsuario> Listar()
         {
-            throw new NotImplementedException();
+            List<TipoUsuario> listaUsuario = _context.TipoUsuario.ToList();
+            return listaUsuario;
         }
     }
 }
