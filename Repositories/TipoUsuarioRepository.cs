@@ -4,7 +4,7 @@ using EventPlus.Domains;
 
 namespace EventoPlus.Repositories
 {
-    public class TipoUsuarioRepository : ITipoUsuarioRepositoy
+    public class TipoUsuarioRepository : ITipoUsuarioRepository
     {
         private readonly EventPlus_Context _context;
         public TipoUsuarioRepository(EventPlus_Context context)

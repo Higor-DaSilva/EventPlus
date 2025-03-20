@@ -9,6 +9,7 @@ namespace EventPlus.Domains
         [Key]
         public Guid IdPresenca { get; set; }
 
+        [Column(TypeName = "BIT")]
         public bool Situacao { get; set; }
  
 

@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace EventoPlus.Interfaces
 {
-    public interface ITipoUsuarioRepositoy
+    public interface ITipoUsuarioRepository
     {
         void Cadastrar(TipoUsuario tipoUsuario);
 

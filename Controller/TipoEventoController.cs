@@ -14,11 +14,11 @@ namespace EventPlus.Controllers
     public class TipoEventoController : ControllerBase
     {
 
-        private readonly ITipoEventoRepository _tiposEventosRepository;
+        private readonly ITipoEventoRepository _tiposEventoRepository;
 
         public TipoEventoController(ITipoEventoRepository tipoEventoRepository)
         {
-            _tiposEventosRepository = tipoEventoRepository;
+            _tiposEventoRepository = tipoEventoRepository;
         }
 
 
@@ -28,7 +28,7 @@ namespace EventPlus.Controllers
             try
             {
 
-                List<TipoEvento> tipoEventoListar = _tiposEventosRepository.Listar();
+                List<TipoEvento> tipoEventoListar = _tiposEventoRepository.Listar();
                 return Ok(tipoEventoListar);
 
             }
@@ -39,28 +39,28 @@ namespace EventPlus.Controllers
         }
         [HttpPost]
 
-        public IActionResult Post(TipoEvento novoEvento)
+        public IActionResult Post(TipoEvento tipoEventos)
         {
             try
             {
-                _tiposEventosRepository.Cadastrar(novoEvento);
+                _tiposEventoRepository.Cadastrar(tipoEventos);
 
                 return Created();
 
             }
-            catch (Exception)
+            catch (Exception e)
             {
 
-                throw;
+                return BadRequest(e.Message);
             }
         }
-        [HttpGet("BuscarPorId/{id}")]
 
+        [HttpGet("BuscarPorId/{id}")]
         public IActionResult GetById(Guid id)
         {
             try
             {
-                TipoEvento EventoBuscado = _tiposEventosRepository.BuscarPorId(id);
+                TipoEvento EventoBuscado = _tiposEventoRepository.BuscarPorId(id);
 
                 return Ok(EventoBuscado);
             }
@@ -72,12 +72,11 @@ namespace EventPlus.Controllers
         }
 
         [HttpDelete("{id}")]
-
         public IActionResult Delete(Guid id)
         {
             try
             {
-                _tiposEventosRepository.Deletar(id);
+                _tiposEventoRepository.Deletar(id);
 
                 return NoContent();
             }
@@ -93,7 +92,7 @@ namespace EventPlus.Controllers
         {
             try
             {
-                _tiposEventosRepository.Atualizar(id, tipoEvento);
+                _tiposEventoRepository.Atualizar(id, tipoEvento);
 
                 return NoContent();
             }

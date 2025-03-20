@@ -13,6 +13,7 @@ namespace EventPlus.Domains
         [Required(ErrorMessage = "A descrição é obrigatória")]
         public string? Descricao { get; set; }
 
+        [Column(TypeName = "BIT")]
         public bool Exibe { get; set; }
 
         public Guid IdUsuario { get; set; }
