@@ -14,22 +14,29 @@ namespace EventoPlus.Repositories
         }
         public void Atualizar(Guid id, Presenca presenca)
         {
-            Presenca presencaBuscada = _context.Presenca.Find(id)!;
-
-            if (presencaBuscada != null)
+            try
             {
-                presencaBuscada.Situacao = presenca.Situacao;
+                Presenca presencaBuscado = _context.Presenca.Find(id)!;
+                if (presencaBuscado != null)
+                {
+                    presencaBuscado.Situacao = presenca.Situacao;
+                }
+                int v = _context.SaveChanges();
+
             }
-            _context.SaveChanges();
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
         public Presenca BuscarPorId(Guid id)
         {
             try
             {
-                Presenca usuarioBuscado = _context.Presenca.Find(id)!;
-
-                return usuarioBuscado;
+                Presenca presencaBuscada = _context.Presenca.Find(id)!;
+                return presencaBuscada;
             }
             catch (Exception)
             {
@@ -40,14 +47,12 @@ namespace EventoPlus.Repositories
 
         public void Deletar(Guid id)
         {
-
             try
             {
-                Presenca eventoBuscado = _context.Presenca.Find(id)!;
-
-                if (eventoBuscado != null)
+                Presenca presencaBuscada = _context.Presenca.Find(id)!;
+                if (presencaBuscada != null)
                 {
-                    _context.Presenca.Remove(eventoBuscado);
+                    _context.Presenca.Remove(presencaBuscada);
                 }
                 _context.SaveChanges();
             }
@@ -58,21 +63,46 @@ namespace EventoPlus.Repositories
             }
         }
 
-        public void Inscrever(Guid id)
+        public void Inscrever(Presenca novaPresenca)
         {
-            throw new NotImplementedException();
+             try
+            {
+                _context.Presenca.Add(novaPresenca);
+                _context.SaveChanges();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
         public List<Presenca> Listar()
         {
-            List<Presenca> Lista = _context.Presenca.ToList();
-            return Lista;
+            try
+            {
+                List<Presenca> listaPresenca = _context.Presenca.ToList();
+                return listaPresenca;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
         public List<Presenca> ListarMinhas(Guid id)
         {
-            List<Presenca> Listaminhas = _context.Presenca.ToList()!;
-            return Listaminhas;
+            try
+            {
+                List<Presenca> listaPresenca = _context.Presenca.Where(p => p.IdUsuario == id).ToList();
+                return listaPresenca;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
     }
 }

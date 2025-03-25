@@ -76,17 +76,45 @@ namespace EventoPlus.Repositories
 
         public List<Evento> Listar()
         {
-            throw new NotImplementedException();
+            try
+            {
+                List<Evento> listaEventos = _context.Evento.ToList();
+
+                return listaEventos;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
         public List<Evento> ListarPorId(Guid id)
         {
-            throw new NotImplementedException();
+            try
+            {
+                List<Evento> listaEvento = _context.Evento.Where(p => p.IdEvento == id).ToList();
+                return listaEvento;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
         public List<Evento> ProximosEventos()
         {
-            throw new NotImplementedException();
+            try
+            {
+                List<Evento> listarProximoEvento = _context.Evento.Where(e => e.DataEvento > DateTime.Now).OrderBy(e => e.DataEvento).ToList();
+                return listarProximoEvento;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
     }
 }
