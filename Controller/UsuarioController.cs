@@ -45,18 +45,19 @@ namespace EventoPlus.Controller
         /// </summary>
         /// <param name="usuario"></param>
         /// <returns></returns>
+        /// 
         [HttpPost]
         public IActionResult Post(Usuario usuario)
         {
             try
             {
                 _usuarioRepository.Cadastrar(usuario);
-                return StatusCode(201, usuario);
+                return Created();
             }
-            catch (Exception error)
+            catch (Exception e)
             {
 
-                return BadRequest(error.Message);
+                return BadRequest(e.Message);
             }
         }
 

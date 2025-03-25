@@ -30,5 +30,7 @@ namespace EventPlus.Domains
         public Guid IdInstituicao { get; set; }
         [ForeignKey("IdInstituicao")]
         public Instituicao? Instituicao { get; set; }
+
+        public Presenca? Presenca { get; set; }
     }
 }

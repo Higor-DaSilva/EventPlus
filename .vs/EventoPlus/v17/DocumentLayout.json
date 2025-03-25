@@ -7,36 +7,68 @@
       "RelativeMoniker": "D:0:0:{723F6750-5E73-4D0A-8BEA-7A9871E33E6A}|EventoPlus.csproj|solutionrelative:controller\\eventocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{723F6750-5E73-4D0A-8BEA-7A9871E33E6A}|EventoPlus.csproj|c:\\users\\50457069856\\desktop\\eventplus\\interfaces\\ieventorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{723F6750-5E73-4D0A-8BEA-7A9871E33E6A}|EventoPlus.csproj|solutionrelative:interfaces\\ieventorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{723F6750-5E73-4D0A-8BEA-7A9871E33E6A}|EventoPlus.csproj|c:\\users\\50457069856\\desktop\\eventplus\\repositories\\eventorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{723F6750-5E73-4D0A-8BEA-7A9871E33E6A}|EventoPlus.csproj|solutionrelative:repositories\\eventorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{723F6750-5E73-4D0A-8BEA-7A9871E33E6A}|EventoPlus.csproj|c:\\users\\50457069856\\desktop\\eventplus\\repositories\\presencarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{723F6750-5E73-4D0A-8BEA-7A9871E33E6A}|EventoPlus.csproj|solutionrelative:repositories\\presencarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{723F6750-5E73-4D0A-8BEA-7A9871E33E6A}|EventoPlus.csproj|c:\\users\\50457069856\\desktop\\eventplus\\domains\\evento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{723F6750-5E73-4D0A-8BEA-7A9871E33E6A}|EventoPlus.csproj|solutionrelative:domains\\evento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{723F6750-5E73-4D0A-8BEA-7A9871E33E6A}|EventoPlus.csproj|c:\\users\\50457069856\\desktop\\eventplus\\controller\\comentarioeventocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{723F6750-5E73-4D0A-8BEA-7A9871E33E6A}|EventoPlus.csproj|solutionrelative:controller\\comentarioeventocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{723F6750-5E73-4D0A-8BEA-7A9871E33E6A}|EventoPlus.csproj|c:\\users\\50457069856\\desktop\\eventplus\\interfaces\\ipresencarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{723F6750-5E73-4D0A-8BEA-7A9871E33E6A}|EventoPlus.csproj|solutionrelative:interfaces\\ipresencarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{723F6750-5E73-4D0A-8BEA-7A9871E33E6A}|EventoPlus.csproj|c:\\users\\50457069856\\desktop\\eventplus\\controller\\tipousuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{723F6750-5E73-4D0A-8BEA-7A9871E33E6A}|EventoPlus.csproj|solutionrelative:controller\\tipousuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{723F6750-5E73-4D0A-8BEA-7A9871E33E6A}|EventoPlus.csproj|c:\\users\\50457069856\\desktop\\eventplus\\repositories\\tipoeventorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{723F6750-5E73-4D0A-8BEA-7A9871E33E6A}|EventoPlus.csproj|solutionrelative:repositories\\tipoeventorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{723F6750-5E73-4D0A-8BEA-7A9871E33E6A}|EventoPlus.csproj|c:\\users\\50457069856\\desktop\\eventplus\\repositories\\tipousuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{723F6750-5E73-4D0A-8BEA-7A9871E33E6A}|EventoPlus.csproj|solutionrelative:repositories\\tipousuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{723F6750-5E73-4D0A-8BEA-7A9871E33E6A}|EventoPlus.csproj|c:\\users\\50457069856\\desktop\\eventplus\\repositories\\presencarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{723F6750-5E73-4D0A-8BEA-7A9871E33E6A}|EventoPlus.csproj|solutionrelative:repositories\\presencarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{723F6750-5E73-4D0A-8BEA-7A9871E33E6A}|EventoPlus.csproj|c:\\users\\50457069856\\desktop\\eventplus\\repositories\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{723F6750-5E73-4D0A-8BEA-7A9871E33E6A}|EventoPlus.csproj|solutionrelative:repositories\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{723F6750-5E73-4D0A-8BEA-7A9871E33E6A}|EventoPlus.csproj|c:\\users\\50457069856\\desktop\\eventplus\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{723F6750-5E73-4D0A-8BEA-7A9871E33E6A}|EventoPlus.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{723F6750-5E73-4D0A-8BEA-7A9871E33E6A}|EventoPlus.csproj|c:\\users\\50457069856\\desktop\\eventplus\\controller\\presencacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{723F6750-5E73-4D0A-8BEA-7A9871E33E6A}|EventoPlus.csproj|solutionrelative:controller\\presencacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{723F6750-5E73-4D0A-8BEA-7A9871E33E6A}|EventoPlus.csproj|c:\\users\\50457069856\\desktop\\eventplus\\controller\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{723F6750-5E73-4D0A-8BEA-7A9871E33E6A}|EventoPlus.csproj|solutionrelative:controller\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{723F6750-5E73-4D0A-8BEA-7A9871E33E6A}|EventoPlus.csproj|c:\\users\\50457069856\\desktop\\eventplus\\repositories\\tipoeventorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{723F6750-5E73-4D0A-8BEA-7A9871E33E6A}|EventoPlus.csproj|solutionrelative:repositories\\tipoeventorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{723F6750-5E73-4D0A-8BEA-7A9871E33E6A}|EventoPlus.csproj|c:\\users\\50457069856\\desktop\\eventplus\\repositories\\comentarioeventorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{723F6750-5E73-4D0A-8BEA-7A9871E33E6A}|EventoPlus.csproj|solutionrelative:repositories\\comentarioeventorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{723F6750-5E73-4D0A-8BEA-7A9871E33E6A}|EventoPlus.csproj|c:\\users\\50457069856\\desktop\\eventplus\\domains\\presenca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{723F6750-5E73-4D0A-8BEA-7A9871E33E6A}|EventoPlus.csproj|solutionrelative:domains\\presenca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{723F6750-5E73-4D0A-8BEA-7A9871E33E6A}|EventoPlus.csproj|c:\\users\\50457069856\\desktop\\eventplus\\interfaces\\icomentarioeventosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{723F6750-5E73-4D0A-8BEA-7A9871E33E6A}|EventoPlus.csproj|solutionrelative:interfaces\\icomentarioeventosrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{723F6750-5E73-4D0A-8BEA-7A9871E33E6A}|EventoPlus.csproj|c:\\users\\50457069856\\desktop\\eventplus\\controller\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{723F6750-5E73-4D0A-8BEA-7A9871E33E6A}|EventoPlus.csproj|solutionrelative:controller\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{723F6750-5E73-4D0A-8BEA-7A9871E33E6A}|EventoPlus.csproj|c:\\users\\50457069856\\desktop\\eventplus\\interfaces\\ipresencarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{723F6750-5E73-4D0A-8BEA-7A9871E33E6A}|EventoPlus.csproj|solutionrelative:interfaces\\ipresencarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,8 +78,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IEventoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\50457069856\\Desktop\\EventPlus\\Interfaces\\IEventoRepository.cs",
+              "RelativeDocumentMoniker": "Interfaces\\IEventoRepository.cs",
+              "ToolTip": "C:\\Users\\50457069856\\Desktop\\EventPlus\\Interfaces\\IEventoRepository.cs",
+              "RelativeToolTip": "Interfaces\\IEventoRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T19:27:17.137Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ComentarioEventoController.cs",
+              "DocumentMoniker": "C:\\Users\\50457069856\\Desktop\\EventPlus\\Controller\\ComentarioEventoController.cs",
+              "RelativeDocumentMoniker": "Controller\\ComentarioEventoController.cs",
+              "ToolTip": "C:\\Users\\50457069856\\Desktop\\EventPlus\\Controller\\ComentarioEventoController.cs",
+              "RelativeToolTip": "Controller\\ComentarioEventoController.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAYwDEAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T13:34:53.789Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -56,53 +114,163 @@
               "RelativeDocumentMoniker": "Controller\\EventoController.cs",
               "ToolTip": "C:\\Users\\50457069856\\Desktop\\EventPlus\\Controller\\EventoController.cs",
               "RelativeToolTip": "Controller\\EventoController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAATAAAAAAAAAA==",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAkwGAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-25T13:50:54.793Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
+              "Title": "Evento.cs",
+              "DocumentMoniker": "C:\\Users\\50457069856\\Desktop\\EventPlus\\Domains\\Evento.cs",
+              "RelativeDocumentMoniker": "Domains\\Evento.cs",
+              "ToolTip": "C:\\Users\\50457069856\\Desktop\\EventPlus\\Domains\\Evento.cs",
+              "RelativeToolTip": "Domains\\Evento.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAYwBYAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T16:55:12.157Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TipoUsuarioRepository.cs",
+              "DocumentMoniker": "C:\\Users\\50457069856\\Desktop\\EventPlus\\Repositories\\TipoUsuarioRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\TipoUsuarioRepository.cs",
+              "ToolTip": "C:\\Users\\50457069856\\Desktop\\EventPlus\\Repositories\\TipoUsuarioRepository.cs",
+              "RelativeToolTip": "Repositories\\TipoUsuarioRepository.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAD4vxYAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T17:05:02.205Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ComentarioEventoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\50457069856\\Desktop\\EventPlus\\Repositories\\ComentarioEventoRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\ComentarioEventoRepository.cs",
+              "ToolTip": "C:\\Users\\50457069856\\Desktop\\EventPlus\\Repositories\\ComentarioEventoRepository.cs",
+              "RelativeToolTip": "Repositories\\ComentarioEventoRepository.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAYwC8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T16:44:18.844Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UsuarioRepository.cs",
+              "DocumentMoniker": "C:\\Users\\50457069856\\Desktop\\EventPlus\\Repositories\\UsuarioRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\UsuarioRepository.cs",
+              "ToolTip": "C:\\Users\\50457069856\\Desktop\\EventPlus\\Repositories\\UsuarioRepository.cs",
+              "RelativeToolTip": "Repositories\\UsuarioRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFAAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T16:12:49.439Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "EventoRepository.cs",
               "DocumentMoniker": "C:\\Users\\50457069856\\Desktop\\EventPlus\\Repositories\\EventoRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\EventoRepository.cs",
               "ToolTip": "C:\\Users\\50457069856\\Desktop\\EventPlus\\Repositories\\EventoRepository.cs",
               "RelativeToolTip": "Repositories\\EventoRepository.cs",
-              "ViewState": "AgIAAFQAAAAAAAAAAAAcwHIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAuwBQAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T16:34:18.839Z",
+              "WhenOpened": "2025-03-25T16:45:29.953Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
+              "Title": "TipoUsuarioController.cs",
+              "DocumentMoniker": "C:\\Users\\50457069856\\Desktop\\EventPlus\\Controller\\TipoUsuarioController.cs",
+              "RelativeDocumentMoniker": "Controller\\TipoUsuarioController.cs",
+              "ToolTip": "C:\\Users\\50457069856\\Desktop\\EventPlus\\Controller\\TipoUsuarioController.cs",
+              "RelativeToolTip": "Controller\\TipoUsuarioController.cs",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAkwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T19:17:19.32Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\50457069856\\Desktop\\EventPlus\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\50457069856\\Desktop\\EventPlus\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-25T18:05:56.248Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "PresencaRepository.cs",
               "DocumentMoniker": "C:\\Users\\50457069856\\Desktop\\EventPlus\\Repositories\\PresencaRepository.cs",
               "RelativeDocumentMoniker": "Repositories\\PresencaRepository.cs",
               "ToolTip": "C:\\Users\\50457069856\\Desktop\\EventPlus\\Repositories\\PresencaRepository.cs",
               "RelativeToolTip": "Repositories\\PresencaRepository.cs",
-              "ViewState": "AgIAAEoAAAAAAAAAAAD4v2MAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAHkAAAAAAAAAAAAuwJoAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-20T16:17:17.109Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ComentarioEventoController.cs",
-              "DocumentMoniker": "C:\\Users\\50457069856\\Desktop\\EventPlus\\Controller\\ComentarioEventoController.cs",
-              "RelativeDocumentMoniker": "Controller\\ComentarioEventoController.cs",
-              "ToolTip": "C:\\Users\\50457069856\\Desktop\\EventPlus\\Controller\\ComentarioEventoController.cs",
-              "RelativeToolTip": "Controller\\ComentarioEventoController.cs",
-              "ViewState": "AgIAADsAAAAAAAAAAAAgwGQAAAAJAAAAAAAAAA==",
+              "DocumentIndex": 14,
+              "Title": "IComentarioEventosRepository.cs",
+              "DocumentMoniker": "C:\\Users\\50457069856\\Desktop\\EventPlus\\Interfaces\\IComentarioEventosRepository.cs",
+              "RelativeDocumentMoniker": "Interfaces\\IComentarioEventosRepository.cs",
+              "ToolTip": "C:\\Users\\50457069856\\Desktop\\EventPlus\\Interfaces\\IComentarioEventosRepository.cs",
+              "RelativeToolTip": "Interfaces\\IComentarioEventosRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-25T13:34:53.789Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-25T16:40:59.543Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 11,
+              "Title": "TipoEventoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\50457069856\\Desktop\\EventPlus\\Repositories\\TipoEventoRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\TipoEventoRepository.cs",
+              "ToolTip": "C:\\Users\\50457069856\\Desktop\\EventPlus\\Repositories\\TipoEventoRepository.cs",
+              "RelativeToolTip": "Repositories\\TipoEventoRepository.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAA2wBcAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T16:27:24.276Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "PresencaController.cs",
+              "DocumentMoniker": "C:\\Users\\50457069856\\Desktop\\EventPlus\\Controller\\PresencaController.cs",
+              "RelativeDocumentMoniker": "Controller\\PresencaController.cs",
+              "ToolTip": "C:\\Users\\50457069856\\Desktop\\EventPlus\\Controller\\PresencaController.cs",
+              "RelativeToolTip": "Controller\\PresencaController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T13:32:01.81Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Presenca.cs",
+              "DocumentMoniker": "C:\\Users\\50457069856\\Desktop\\EventPlus\\Domains\\Presenca.cs",
+              "RelativeDocumentMoniker": "Domains\\Presenca.cs",
+              "ToolTip": "C:\\Users\\50457069856\\Desktop\\EventPlus\\Domains\\Presenca.cs",
+              "RelativeToolTip": "Domains\\Presenca.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T17:29:46.448Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "IPresencaRepository.cs",
               "DocumentMoniker": "C:\\Users\\50457069856\\Desktop\\EventPlus\\Interfaces\\IPresencaRepository.cs",
               "RelativeDocumentMoniker": "Interfaces\\IPresencaRepository.cs",
@@ -110,57 +278,19 @@
               "RelativeToolTip": "Interfaces\\IPresencaRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-25T13:33:25.525Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-25T13:33:25.525Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "TipoEventoRepository.cs",
-              "DocumentMoniker": "C:\\Users\\50457069856\\Desktop\\EventPlus\\Repositories\\TipoEventoRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\TipoEventoRepository.cs",
-              "ToolTip": "C:\\Users\\50457069856\\Desktop\\EventPlus\\Repositories\\TipoEventoRepository.cs",
-              "RelativeToolTip": "Repositories\\TipoEventoRepository.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAA3wC8AAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T16:27:24.276Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "PresencaController.cs",
-              "DocumentMoniker": "C:\\Users\\50457069856\\Desktop\\EventPlus\\Controller\\PresencaController.cs",
-              "RelativeDocumentMoniker": "Controller\\PresencaController.cs",
-              "ToolTip": "C:\\Users\\50457069856\\Desktop\\EventPlus\\Controller\\PresencaController.cs",
-              "RelativeToolTip": "Controller\\PresencaController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-25T13:32:01.81Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 15,
               "Title": "UsuarioController.cs",
               "DocumentMoniker": "C:\\Users\\50457069856\\Desktop\\EventPlus\\Controller\\UsuarioController.cs",
               "RelativeDocumentMoniker": "Controller\\UsuarioController.cs",
               "ToolTip": "C:\\Users\\50457069856\\Desktop\\EventPlus\\Controller\\UsuarioController.cs",
               "RelativeToolTip": "Controller\\UsuarioController.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAiwD0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAABMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-25T13:27:45.58Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ComentarioEventoRepository.cs",
-              "DocumentMoniker": "C:\\Users\\50457069856\\Desktop\\EventPlus\\Repositories\\ComentarioEventoRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\ComentarioEventoRepository.cs",
-              "ToolTip": "C:\\Users\\50457069856\\Desktop\\EventPlus\\Repositories\\ComentarioEventoRepository.cs",
-              "RelativeToolTip": "Repositories\\ComentarioEventoRepository.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAYwDoAAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-20T16:44:18.844Z"
             }
           ]
         }

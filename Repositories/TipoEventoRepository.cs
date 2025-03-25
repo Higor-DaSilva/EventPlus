@@ -21,6 +21,8 @@ namespace EventoPlus.Repositories
             {
                 eventoBuscado.TituloTipoEvento = tipoEventos.TituloTipoEvento;
             }
+            _context.TipoEvento.Update(eventoBuscado);
+            
             _context.SaveChanges();
         }
 
@@ -47,6 +49,8 @@ namespace EventoPlus.Repositories
         {
             try
             {
+                tipoEventos.IdTipoEvento = Guid.NewGuid();
+
                 _context.TipoEvento.Add(tipoEventos);
 
                 _context.SaveChanges();
@@ -81,8 +85,16 @@ namespace EventoPlus.Repositories
 
         public List<TipoEvento> Listar()
         {
-            List<TipoEvento> ListaEvento = _context.TipoEvento.ToList();
-            return ListaEvento;
+            try
+            {
+                return _context.TipoEvento
+                    .OrderBy(tp => tp.TituloTipoEvento)
+                    .ToList();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
     }
 }

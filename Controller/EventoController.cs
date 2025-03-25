@@ -80,7 +80,8 @@ namespace EventoPlus.Controller
         /// <param name="id"></param>
         /// <param name="novoEvento"></param>
         /// <returns></returns>
-        [HttpPut]
+        [HttpPut("{id}")]
+
         public IActionResult Put(Guid id, Evento novoEvento)
         {
             try
@@ -88,20 +89,21 @@ namespace EventoPlus.Controller
                 _eventoRepository.Atualizar(id, novoEvento);
                 return NoContent();
             }
-            catch (Exception e)
+            catch (Exception error)
             {
 
-                return BadRequest(e.Message);
+                return BadRequest(error.Message);
             }
 
         }
 
-        /// <summary>
-        /// Endpoint para Listar Proximos Eventos
-        /// </summary>
-        /// <param name="id"></param>
-        /// <returns></returns>
-        [HttpGet("ProximosEventos/{id}")]
+            /// <summary>
+            /// Endpoint para Listar Proximos Eventos
+            /// </summary>
+            /// <param name="id"></param>
+            /// <returns></returns>
+            [HttpGet("ProximosEventos/{id}")]
+
         public IActionResult Get(Guid id)
         {
             try

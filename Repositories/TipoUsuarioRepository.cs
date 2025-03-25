@@ -20,6 +20,8 @@ namespace EventoPlus.Repositories
             {
                 usuarioBuscado.TituloTipoUsuario = tipoUsuario.TituloTipoUsuario;
             }
+            _context.TipoUsuario.Update(usuarioBuscado);
+
             _context.SaveChanges();
         }
 
@@ -40,6 +42,7 @@ namespace EventoPlus.Repositories
 
         public void Cadastrar(TipoUsuario tipoUsuario)
         {
+            tipoUsuario.IdTipoUsuario = Guid.NewGuid();
             _context.TipoUsuario.Add(tipoUsuario);
             _context.SaveChanges();
         }
@@ -67,8 +70,14 @@ namespace EventoPlus.Repositories
 
         public List<TipoUsuario> Listar()
         {
-            List<TipoUsuario> listaUsuario = _context.TipoUsuario.ToList();
-            return listaUsuario;
+            try
+            {
+                return _context.TipoUsuario.ToList();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
     }
 }

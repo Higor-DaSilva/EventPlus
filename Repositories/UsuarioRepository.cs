@@ -10,6 +10,11 @@ namespace EventoPlus.Repositories
     {
         private readonly EventPlus_Context _context;
 
+        public UsuarioRepository(EventPlus_Context context)
+        {
+            _context = context;
+        }
+
         public Usuario BuscarPorEmailESenha(Guid id, string email, string senha)
         {
             try
@@ -40,21 +45,49 @@ namespace EventoPlus.Repositories
         {
             try
             {
-                Usuario usuarioBuscado = _context.Usuario.Find(id)!;
+                Usuario usuarioBuscado = _context.Usuario
+                    .Select(u => new Usuario
+                    {
+                        IdUsuario = u.IdUsuario,
+                        NomeUsuario = u.NomeUsuario,
+                        Email = u.Email,
+                        Senha = u.Senha,
 
-                return usuarioBuscado;
+                        TipoUsuario = new TipoUsuario
+                        {
+                            IdTipoUsuario = u.TipoUsuario!.IdTipoUsuario,
+                            TituloTipoUsuario = u.TipoUsuario!.TituloTipoUsuario
+                        }
+
+                    }).FirstOrDefault(u => u.IdUsuario == id)!;
+
+                if (usuarioBuscado != null)
+                {
+                    return usuarioBuscado;
+
+                }
+                return null!;
             }
             catch (Exception)
             {
-
                 throw;
             }
         }
 
         public void Cadastrar(Usuario novoUsuario)
         {
-            _context.Usuario.Add(novoUsuario);
-            _context.SaveChanges();
+            try
+            {
+                novoUsuario.IdUsuario = Guid.NewGuid();
+                _context.Usuario.Add(novoUsuario);
+                _context.SaveChanges();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+           
         }
     }
 }

@@ -35,12 +35,30 @@ namespace EventoPlus.Repositories
         {
             try
             {
-                Presenca presencaBuscada = _context.Presenca.Find(id)!;
-                return presencaBuscada;
+                return _context.Presenca
+                    .Select(p => new Presenca
+                    {
+                        IdPresenca = p.IdPresenca,
+                        Situacao = p.Situacao,
+
+                        Evento = new Evento
+                        {
+                            IdEvento = p.IdEvento!,
+                            DataEvento = p.Evento!.DataEvento,
+                            NomeEvento = p.Evento.NomeEvento,
+                            Descricao = p.Evento.Descricao,
+
+                            Instituicao = new Instituicao
+                            {
+                                IdInstituicao = p.Evento.Instituicao!.IdInstituicao,
+                                NomeFantasia = p.Evento.Instituicao!.NomeFantasia
+                            }
+                        }
+
+                    }).FirstOrDefault(p => p.IdPresenca == id)!;
             }
             catch (Exception)
             {
-
                 throw;
             }
         }
@@ -81,28 +99,59 @@ namespace EventoPlus.Repositories
         {
             try
             {
-                List<Presenca> listaPresenca = _context.Presenca.ToList();
-                return listaPresenca;
+                return _context.Presenca
+                    .Select(p => new Presenca
+                    {
+                        IdPresenca = p.IdPresenca,
+                        Situacao = p.Situacao,
+
+                        Evento = new Evento
+                        {
+                            IdEvento = p.IdEvento,
+                            DataEvento = p.Evento!.DataEvento,
+                            NomeEvento = p.Evento.NomeEvento,
+                            Descricao = p.Evento.Descricao,
+
+                            Instituicao = new Instituicao
+                            {
+                                IdInstituicao = p.Evento.Instituicao!.IdInstituicao,
+                                NomeFantasia = p.Evento.Instituicao!.NomeFantasia
+                            }
+                        }
+
+                    }).ToList();
             }
             catch (Exception)
             {
-
                 throw;
             }
         }
 
         public List<Presenca> ListarMinhas(Guid id)
         {
-            try
-            {
-                List<Presenca> listaPresenca = _context.Presenca.Where(p => p.IdUsuario == id).ToList();
-                return listaPresenca;
-            }
-            catch (Exception)
-            {
+            return _context.Presenca
+                  .Select(p => new Presenca
+                  {
+                      IdPresenca = p.IdPresenca,
+                      Situacao = p.Situacao,
+                      IdUsuario = p.IdUsuario,
+                      IdEvento = p.IdEvento,
 
-                throw;
-            }
+                      Evento = new Evento
+                      {
+                          IdEvento = p.IdEvento,
+                          DataEvento = p.Evento!.DataEvento,
+                          NomeEvento = p.Evento!.NomeEvento,
+                          Descricao = p.Evento!.Descricao,
+
+                          Instituicao = new Instituicao
+                          {
+                              IdInstituicao = p.Evento!.IdInstituicao,
+                          }
+                      }
+                  })
+                  .Where(p => p.IdUsuario == id)
+                  .ToList();
         }
     }
 }

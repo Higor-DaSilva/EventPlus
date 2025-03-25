@@ -9,8 +9,9 @@ namespace EventoPlus.Interfaces
         void Cadastrar(ComentarioEvento novoComentario);
 
         void Deletar(Guid id);
-        List<ComentarioEvento> Listar();
+        List<ComentarioEvento> Listar(Guid id);
 
         ComentarioEvento BuscarPorIdUsuario(Guid idUsuario,Guid IdEvento);
+        object? Listar();
     }
 }

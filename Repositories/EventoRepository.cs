@@ -1,6 +1,7 @@
 ﻿using EventoPlus.Context;
 using EventoPlus.Interfaces;
 using EventPlus.Domains;
+using Microsoft.EntityFrameworkCore;
 
 namespace EventoPlus.Repositories
 {
@@ -21,7 +22,10 @@ namespace EventoPlus.Repositories
                 eventoBuscado.DataEvento = evento.DataEvento;
                 eventoBuscado.NomeEvento = evento.NomeEvento;
                 eventoBuscado.Descricao = evento.Descricao;
+                eventoBuscado.IdTipoEvento = evento.IdTipoEvento;
             }
+            _context.Evento.Update(eventoBuscado);
+
             _context.SaveChanges();
         }
 
@@ -29,13 +33,26 @@ namespace EventoPlus.Repositories
         {
             try
             {
-                Evento eventoBuscado = _context.Evento.Find(id)!;
-
-                return eventoBuscado;
+                return _context.Evento
+                    .Select(e => new Evento
+                    {
+                        IdEvento = e.IdEvento,
+                        NomeEvento = e.NomeEvento,
+                        Descricao = e.Descricao,
+                        DataEvento = e.DataEvento,
+                        TipoEvento = new TipoEvento
+                        {
+                            TituloTipoEvento = e.TipoEvento!.TituloTipoEvento
+                        },
+                        Instituicao = new Instituicao
+                        {
+                            NomeFantasia = e.Instituicao!.NomeFantasia
+                        }
+                    }).FirstOrDefault(e => e.IdEvento == id)!;
             }
             catch (Exception)
             {
-
+                
                 throw;
             }
         }
@@ -44,6 +61,14 @@ namespace EventoPlus.Repositories
         {
             try
             {
+                // Verifica se a data do evento é maior que a data atual
+                if (novoEvento.DataEvento < DateTime.Now)
+                {
+                    throw new ArgumentException("A data do evento deve ser maior ou igual a data atual.");
+                }
+
+                novoEvento.IdEvento = Guid.NewGuid();
+
                 _context.Evento.Add(novoEvento);
 
                 _context.SaveChanges();
@@ -78,9 +103,26 @@ namespace EventoPlus.Repositories
         {
             try
             {
-                List<Evento> listaEventos = _context.Evento.ToList();
-
-                return listaEventos;
+                return _context.Evento
+                    .Select(e => new Evento
+                    {
+                        IdEvento = e.IdEvento,
+                        NomeEvento = e.NomeEvento,
+                        Descricao = e.Descricao,
+                        DataEvento = e.DataEvento,
+                        IdTipoEvento = e.IdTipoEvento,
+                        TipoEvento = new TipoEvento
+                        {
+                            IdTipoEvento = e.IdTipoEvento,
+                            TituloTipoEvento = e.TipoEvento!.TituloTipoEvento
+                        },
+                        IdInstituicao = e.IdInstituicao,
+                        Instituicao = new Instituicao
+                        {
+                            IdInstituicao = e.IdInstituicao,
+                            NomeFantasia = e.Instituicao!.NomeFantasia
+                        }
+                    }).ToList();
             }
             catch (Exception)
             {
@@ -93,8 +135,34 @@ namespace EventoPlus.Repositories
         {
             try
             {
-                List<Evento> listaEvento = _context.Evento.Where(p => p.IdEvento == id).ToList();
-                return listaEvento;
+                return _context.Evento
+                    .Include(e => e.Presenca)
+                    .Select(e => new Evento
+                    {
+                        IdEvento = e.IdEvento,
+                        NomeEvento = e.NomeEvento,
+                        Descricao = e.Descricao,
+                        DataEvento = e.DataEvento,
+                        IdTipoEvento = e.IdTipoEvento,
+                        TipoEvento = new TipoEvento
+                        {
+                            IdTipoEvento = e.IdTipoEvento,
+                            TituloTipoEvento = e.TipoEvento!.TituloTipoEvento
+                        },
+                        IdInstituicao = e.IdInstituicao,
+                        Instituicao = new Instituicao
+                        {
+                            IdInstituicao = e.IdInstituicao,
+                            NomeFantasia = e.Instituicao!.NomeFantasia
+                        },
+                        Presenca = new Presenca
+                        {
+                            IdUsuario = e.Presenca!.IdUsuario,
+                            Situacao = e.Presenca!.Situacao
+                        }
+                    })
+                    .Where(e => e.Presenca!.Situacao == true && e.Presenca.IdUsuario == id)
+                    .ToList();
             }
             catch (Exception)
             {
@@ -107,12 +175,33 @@ namespace EventoPlus.Repositories
         {
             try
             {
-                List<Evento> listarProximoEvento = _context.Evento.Where(e => e.DataEvento > DateTime.Now).OrderBy(e => e.DataEvento).ToList();
-                return listarProximoEvento;
+                return _context.Evento
+                    .Select(e => new Evento
+                    {
+                        IdEvento = e.IdEvento,
+                        NomeEvento = e.NomeEvento,
+                        Descricao = e.Descricao,
+                        DataEvento = e.DataEvento,
+                        IdTipoEvento = e.IdTipoEvento,
+                        TipoEvento = new TipoEvento
+                        {
+                            IdTipoEvento = e.IdTipoEvento,
+                            TituloTipoEvento = e.TipoEvento!.TituloTipoEvento
+                        },
+                        IdInstituicao = e.IdInstituicao,
+                        Instituicao = new Instituicao
+                        {
+                            IdInstituicao = e.IdInstituicao,
+                            NomeFantasia = e.Instituicao!.NomeFantasia
+                        }
+
+                    })
+                    .Where(e => e.DataEvento >= DateTime.Now)
+                    .ToList();
             }
             catch (Exception)
             {
-
+                    
                 throw;
             }
         }
