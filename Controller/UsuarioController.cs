@@ -67,7 +67,7 @@ namespace EventoPlus.Controller
         {
             try
             {
-                Usuario novoUsuario = _usuarioRepository.BuscarPorEmailESenha(email, senha);
+                Usuario novoUsuario = _usuarioRepository.BuscarPorEmailESenha (email, senha);
                 return Ok(novoUsuario);
             }
             catch (Exception error)

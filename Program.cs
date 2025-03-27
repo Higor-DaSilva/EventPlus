@@ -75,7 +75,7 @@ options.SwaggerDoc("v1", new OpenApiInfo
     TermsOfService = new Uri("https://example.com/terms"),
     Contact = new OpenApiContact
     {
-        Name = "Matheus Reis",
+        Name = "Higor silva",
         Url = new Uri("https://example.com/contact")
     },
     License = new OpenApiLicense
@@ -84,6 +84,9 @@ options.SwaggerDoc("v1", new OpenApiInfo
         Url = new Uri("https://example.com/license")
     }
 });
+
+    var xmlFilename = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+    options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, xmlFilename));
 
 
 

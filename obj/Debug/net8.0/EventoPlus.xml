@@ -94,13 +94,6 @@
             <param name="id"></param>
             <returns></returns>
         </member>
-        <member name="M:EventoPlus.Controller.PresencaController.Delete(System.Guid)">
-            <summary>
-            Endpoint para deletar presenças
-            </summary>
-            <param name="id"></param>
-            <returns></returns>
-        </member>
         <member name="M:EventoPlus.Controller.PresencaController.Put(System.Guid,EventPlus.Domains.Presenca)">
             <summary>
             Endpoint para atualizar as presenças

@@ -76,27 +76,6 @@ namespace EventoPlus.Controller
         }
 
         /// <summary>
-        /// Endpoint para deletar presenças
-        /// </summary>
-        /// <param name="id"></param>
-        /// <returns></returns>
-        [HttpDelete("{id}")]
-        public IActionResult Delete(Guid id)
-        {
-            try
-            {
-                _presencaRepository.Deletar(id);
-                return NoContent();
-            }
-            catch (Exception)
-            {
-
-                throw;
-            }
-
-        }
-
-        /// <summary>
         /// Endpoint para atualizar as presenças
         /// </summary>
         [HttpPut("{id}")]
