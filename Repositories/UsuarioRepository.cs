@@ -78,7 +78,7 @@ namespace EventoPlus.Repositories
         {
             try
             {
-                novoUsuario.IdUsuario = Guid.NewGuid();
+               novoUsuario.Senha = Criptografia.GerarHash(novoUsuario.Senha!);
                 _context.Usuario.Add(novoUsuario);
                 _context.SaveChanges();
             }

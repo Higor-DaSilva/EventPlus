@@ -45,7 +45,7 @@ namespace EventoPlus.Controller
         /// Endpoint para listar Feedbacks
         /// </summary>
         /// <returns></returns>
-        [HttpGet]
+        [HttpGet("{id}")]
         public IActionResult Get(Guid id)
         {
             try

@@ -28,8 +28,7 @@ namespace EventPlus.Controllers
             try
             {
 
-                List<TipoEvento> tipoEventoListar = _tiposEventoRepository.Listar();
-                return Ok(tipoEventoListar);
+                return Ok(_tiposEventoRepository.Listar());
 
             }
             catch (Exception e)
@@ -45,7 +44,7 @@ namespace EventPlus.Controllers
             {
                 _tiposEventoRepository.Cadastrar(tipoEventos);
 
-                return Created();
+                return StatusCode(201, tipoEventos);
 
             }
             catch (Exception e)
@@ -94,7 +93,7 @@ namespace EventPlus.Controllers
             {
                 _tiposEventoRepository.Atualizar(id, tipoEvento);
 
-                return NoContent();
+                return StatusCode(204, tipoEvento);
             }
             catch (Exception)
             {

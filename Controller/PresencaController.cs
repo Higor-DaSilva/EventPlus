@@ -60,18 +60,17 @@ namespace EventoPlus.Controller
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        [HttpGet("BucarPorId/{id}")]
+        [HttpGet("BuscarPorId/{id}")]
         public IActionResult GetById(Guid id)
         {
             try
             {
-                Presenca presencaBuscada = _presencaRepository.BuscarPorId(id);
-                return Ok(presencaBuscada);
+            
+                return Ok(_presencaRepository.BuscarPorId(id));
             }
-            catch (Exception)
+            catch (Exception error)
             {
-
-                throw;
+                return BadRequest(error.Message);
             }
 
         }
@@ -98,17 +97,36 @@ namespace EventoPlus.Controller
         }
 
         /// <summary>
+        /// Endpoint para atualizar as presenças
+        /// </summary>
+        [HttpPut("{id}")]
+        public IActionResult Put(Guid id, Presenca presenca)
+        {
+            try
+            {
+                _presencaRepository.Atualizar(id, presenca);
+                return NoContent();
+            }
+            catch (Exception error)
+            {
+                return BadRequest(error.Message);
+            }
+        }
+
+
+
+        /// <summary>
         /// Endpoint para listar suas presenças
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        [HttpGet("ListarMinhasPresencas/{id}")]
+        [HttpGet("ListarMinhas/{id}")]
         public IActionResult Get(Guid id)
         {
             try
             {
-                List<Presenca> listarMinhasPresencas = _presencaRepository.ListarMinhas(id);
-                return Ok(listarMinhasPresencas);
+                
+                return Ok(_presencaRepository.ListarMinhas(id));
             }
             catch (Exception error)
             {

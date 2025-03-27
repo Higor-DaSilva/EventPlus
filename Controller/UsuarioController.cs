@@ -52,7 +52,7 @@ namespace EventoPlus.Controller
             try
             {
                 _usuarioRepository.Cadastrar(usuario);
-                return Created();
+                return StatusCode(201, usuario);
             }
             catch (Exception e)
             {
@@ -62,8 +62,8 @@ namespace EventoPlus.Controller
         }
 
 
-        [HttpGet("BuscarPorEmailESenha/{email}, {senha}")]
-        public IActionResult Get(string email, string senha)
+        [HttpGet("BuscarPorEmailESenha")]
+        public IActionResult Get([FromQuery]string email,[FromQuery] string senha)
         {
             try
             {
@@ -76,5 +76,5 @@ namespace EventoPlus.Controller
             }
         }
 
-        }
+    }
 }
