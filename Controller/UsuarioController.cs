@@ -62,25 +62,19 @@ namespace EventoPlus.Controller
         }
 
 
-        //[HttpGet("BuscarPorEmailESenha")]
-        //public IActionResult GetActionResult(string email, string senha)
-        //{
-        //    try
-        //    {
-        //        Usuario usuarioBuscado = _usuarioRepository.BuscarPorEmailESenha(email, senha);
+        [HttpGet("BuscarPorEmailESenha/{email}, {senha}")]
+        public IActionResult Get(string email, string senha)
+        {
+            try
+            {
+                Usuario novoUsuario = _usuarioRepository.BuscarPorEmailESenha(email, senha);
+                return Ok(novoUsuario);
+            }
+            catch (Exception error)
+            {
+                return BadRequest(error.Message);
+            }
+        }
 
-        //        if (usuarioBuscado != null)
-        //        {
-        //            return Ok(usuarioBuscado);
-        //        }
-        //        return null!;
-        //    }
-        //    catch (Exception e)
-        //    {
-
-        //        return BadRequest(e.Message);
-        //    }
-        //}
-
-    }
+        }
 }

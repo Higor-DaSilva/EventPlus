@@ -12,6 +12,7 @@ namespace EventoPlus.Interfaces
         List<ComentarioEvento> Listar(Guid id);
 
         ComentarioEvento BuscarPorIdUsuario(Guid idUsuario,Guid IdEvento);
-        object? Listar();
+
     }
+
 }

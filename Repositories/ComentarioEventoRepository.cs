@@ -111,10 +111,7 @@ namespace EventoPlus.Repositories
             }
         }
 
-        public object? Listar()
-        {
-            throw new NotImplementedException();
-        }
+ 
 
         public List<ComentarioEvento> ListarSomenteExibe(Guid id)
         {

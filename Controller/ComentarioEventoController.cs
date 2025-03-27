@@ -1,4 +1,5 @@
 ﻿using EventoPlus.Interfaces;
+using EventoPlus.Repositories;
 using EventPlus.Domains;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -7,6 +8,8 @@ namespace EventoPlus.Controller
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Produces("application/json")]
+
     public class ComentarioEventoController : ControllerBase
     {
         private readonly IComentarioEventosRepository _feedbackRepository;
@@ -43,11 +46,11 @@ namespace EventoPlus.Controller
         /// </summary>
         /// <returns></returns>
         [HttpGet]
-        public IActionResult Get()
+        public IActionResult Get(Guid id)
         {
             try
             {
-                return Ok(_feedbackRepository.Listar());
+                return Ok(_feedbackRepository.Listar(id));
 
             }
             catch (Exception e)

@@ -15,7 +15,7 @@ namespace EventoPlus.Repositories
             _context = context;
         }
 
-        public Usuario BuscarPorEmailESenha(Guid id, string email, string senha)
+        public Usuario BuscarPorEmailESenha(string email, string senha)
         {
             try
             {
@@ -30,8 +30,8 @@ namespace EventoPlus.Repositories
                         return usuarioBuscado;
                     }
                 }
-
                 return null!;
+
             }
 
             catch (Exception)

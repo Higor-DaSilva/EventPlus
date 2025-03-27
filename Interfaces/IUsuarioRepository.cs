@@ -7,9 +7,6 @@ namespace EventoPlus.Interfaces
     {
         void Cadastrar(Usuario novoUsuario);
         Usuario BuscarPorId(Guid id);
-
-        Usuario BuscarPorEmailESenha(Guid id, string email, string senha);
-
-           
+        Usuario BuscarPorEmailESenha(string email, string senha);
     }
 }
